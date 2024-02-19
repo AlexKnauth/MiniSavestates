@@ -19,7 +19,7 @@ jobs:
       run: dotnet restore
     - name: Build MiniSavestates (Windows)
       run: |
-        dotnet build MiniSavestates -p:SolutionDir=$PWD -p:Configuration=Release
+        dotnet build
     - name: Upload Windows Binary
       uses: actions/upload-artifact@v3
       with:
@@ -42,7 +42,7 @@ jobs:
       run: dotnet restore
     - name: Build MiniSavestates (Linux)
       run: |
-        dotnet build MiniSavestates -p:SolutionDir=$PWD -p:Configuration=Release
+        dotnet build
     - name: Upload Linux Binary
       uses: actions/upload-artifact@v3
       with:
@@ -65,7 +65,7 @@ jobs:
       run: dotnet restore
     - name: Build MiniSavestates (Mac)
       run: |
-        dotnet build MiniSavestates -p:SolutionDir=$PWD -p:Configuration=Release
+        dotnet build
     - name: Upload Mac Binary
       uses: actions/upload-artifact@v3
       with:
