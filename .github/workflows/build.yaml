@@ -24,7 +24,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: MiniSavestatesWin
-        path: ./OutputFinal/
+        path: ./out-15/
 
   build-linux:
     runs-on: ubuntu-latest
@@ -47,7 +47,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: MiniSavestatesLinux
-        path: ./OutputFinal/
+        path: ./out-15/
 
   build-mac:
     runs-on: ubuntu-latest
@@ -70,7 +70,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: MiniSavestatesMac
-        path: ./OutputFinal/
+        path: ./out-15/
 
   release:
     needs: [build-win, build-linux, build-mac]
