@@ -10,7 +10,7 @@ jobs:
     - name: Setup Vanilla
       run: |
         wget https://files.catbox.moe/i4sdl6.zip -O Vanilla.zip
-        unzip Vanilla.zip -d Vanilla
+        unzip Vanilla.zip -d vanilla
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
     - name: Setup ms-build
@@ -33,7 +33,7 @@ jobs:
     - name: Setup Vanilla
       run: |
         wget https://files.catbox.moe/j85bvb.zip -O Vanilla.zip
-        unzip Vanilla.zip -d Vanilla
+        unzip Vanilla.zip -d vanilla
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
     - name: Setup ms-build
@@ -56,7 +56,7 @@ jobs:
     - name: Setup Vanilla
       run: |
         wget https://files.catbox.moe/j8fyro.zip -O Vanilla.zip
-        unzip Vanilla.zip -d Vanilla
+        unzip Vanilla.zip -d vanilla
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
     - name: Setup ms-build
